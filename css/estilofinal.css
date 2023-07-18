@@ -1,0 +1,573 @@
+	/* FUENTES DE LA PAGINA */
+	/* Fuente para textos informativos, subtitulos, etc */
+@font-face	{	font-family: "Carbona";
+				src: url("../fonts/carbona.ttf");
+			}
+	/* Fuente para titulos y similares */
+@font-face	{	font-family: "Wadim";
+				src: url("../fonts/wadim.ttf");
+			}
+
+	/* ESTRUCTURA DE LA PAGINA */
+
+*	{	margin: 0;
+		padding: 0;
+	}
+
+body{	background: black;
+		color: black;
+		font-family: "Wadim", "Times New Roman";
+		letter-spacing: 1px;
+	}
+
+.contenedor	{	width: 90%;
+				max-width: 1500px;
+				margin: 20px auto;
+				display: grid;
+				grid-gap: 20px;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(4, auto);
+
+				grid-template-areas:	"header header header"
+										"sidebar contenido contenido"
+										"sidebar widget-1 widget-2"
+										"footer footer footer";
+			}
+
+.contenedor > div,
+.contenedor	.header,
+.contenedor	.contenido,
+.contenedor	.sidebar,
+.contenedor	.footer	{	background: black;
+						padding: 20px;
+						border-radius: 4px;
+					}
+
+.contenedor .header	{	background: black;
+						color: white;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						grid-area: header;
+					}
+
+.contenedor .contenido	{	background-color: black;
+							justify-content: center;
+							grid-area: contenido;
+						}
+
+.contenedor .sidebar	{	background: black;
+							grid-column: 3/4;
+							text-align: center;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							grid-area: sidebar;
+						}
+
+.contenedor .widget-1,
+.contenedor .widget-2	{	background: black;
+							color: white;
+							height: 100px;
+							text-align: center;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+
+.contenedor .widget-1	{	display: flex;
+							align-items: center;
+							justify-content: center;
+							grid-area: widget-1;
+						}
+
+.contenedor .widget-2	{	display: flex;
+							align-items: center;
+							justify-content: center;
+							grid-area: widget-2;
+						}
+
+.contenedor .footer	{	background: black;
+						color: white;
+						display: flex;
+						align-items: center;
+						justify-content: right;
+						grid-area: footer;
+					}
+
+/* ESTILOS DE LA PAGINA */
+
+.sitename	{	text-decoration: none;
+				font-family: "Wadim", "Times New Roman";
+				color: #ffffff;
+				font-size: 90px;
+				text-shadow: 0 0 30px #444444;
+			}
+
+.sitenamevertical	{	text-decoration: none;
+						font-family: "Wadim", "Times New Roman";
+						color: #ffffff;
+						font-size: 40px;
+						text-shadow: 0 0 30px #444444;
+					}
+
+.logo	{	border: solid;
+			border-radius: 10px;
+			border-color: black;
+			background-color: black;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+.titular	{	font-family: "Carbona", "Times New Roman";
+				color: #28E296;
+				font-size: 30px;
+				text-decoration: none;
+			}
+
+.categorianombres	{	font-family: "Carbona", "Times New Roman";
+						color: white;
+						text-decoration: none;
+						font-size: 30px;
+						background-color: transparent;
+						border-radius: 5px;
+						padding: 4px;
+					}
+
+/* ESTILOS PARA LAS IMAGENES */
+
+.imglogo	{	width: 80px;
+				height: 100px;
+			}
+
+.imglogosidebar	{	width: 72px;
+					height: 90px;
+				}
+
+.imglogo-sidebar-vertical	{	width: 70px;
+								height: 88px;
+							}
+
+.imgjuegoinicio	{	width: 315px;
+					height: 458px;
+				}
+
+.imgjuegowidget	{	width: 130px;
+					height: 156px;
+				}
+
+.imglogostores	{	width: 130px;
+					height: 35px;
+				}
+
+/* FOOTER */
+
+.footertitle{	font-family: "Carbona", "Times New Roman";
+				color: #28E296;
+				font-size: 18px;
+				text-decoration: none;
+				text-align: left;
+			}
+
+.footerdata	{	font-family: "Carbona", "Times New Roman";
+				color: white;
+				font-size: 18px;
+				text-decoration: none;
+				text-align: left;
+			}
+
+/* ESTILO VISTA DETALLADA DEL JUEGO */
+
+.infojuego	{	font-family: "Carbona", "Times New Roman";
+				color: white;
+				font-size: 20px;
+				text-decoration: none;
+				text-align: left;
+			}
+
+.reqjuego	{	font-family: "Carbona", "Times New Roman";
+				background-color: black;
+				color: white;
+				font-size: 17px;
+				text-decoration: none;
+				text-align: left;
+			}
+
+/* ESTILOS PARA LA PAGINA DE RESERVA Y CONFIRMACION DE RESERVA */
+
+.nombrecampo	{	font-family: "Carbona", "Times New Roman";
+					color: white;
+					font-size: 20px;
+				}
+
+.camporequerido	{	font-family: "Carbona", "Times New Roman";
+					color: #28E296;
+					font-size: 20px;
+				}
+.clean	{	text-decoration: none;
+			color: black;
+			font-size: 22px;
+			font-family: "Carbona", "Times New Roman";
+			background-color: #28C3E2;
+			border: medium black;
+			border-radius: 15px;
+			padding: 15px;
+			letter-spacing: 1.5px;
+		}
+
+.ok	{	text-decoration: none;
+		color: black;
+		font-size: 22px;
+		font-family: "Carbona", "Times New Roman";
+		background-color: #28E296;
+		border: medium black;
+		border-radius: 15px;
+		padding: 15px;
+		letter-spacing: 1.5px;
+	}
+
+/* EFECTOS */
+
+a.categorianombres:hover{	color: white;
+							background-color: #28E296;
+							cursor: pointer;
+						}
+
+th.categorianombres:hover	{	color: white;
+								background-color: #28E296;
+							}
+
+/* MEDIA SCREEN SETS */
+
+@media screen and (max-width: 600px){	/* Extra small devices (phones, 600px and down) */
+
+	.contenedor {
+		
+		grid-template-areas:	"header header header"
+								"sidebar sidebar sidebar"
+								"contenido contenido contenido"
+								"widget-1 widget-1 widget-1"
+								"widget-2 widget-2 widget-2"
+								"footer footer footer";
+	}
+
+	.sitename	{	font-size: 55px;
+				}
+
+	.footertitle	{	font-size: 12px;
+					}
+
+	.footerdata	{	font-size: 12px;
+				}
+
+	.titular	{	font-size: 20px;
+				}
+
+	.categorianombres	{	font-size: 20px;
+						}
+
+	.infojuego	{	font-size: 15px;
+				}
+
+	.reqjuego	{	font-size: 14px;
+				}
+
+	.imglogo{	width: 65px;
+				height: 82px;
+			}
+
+	.imglogosidebar	{	width: 65px;
+						height: 81px;
+					}
+
+	.imgjuegoinicio	{	width: 130px;
+						height: 195px;
+					}
+
+	.imgjuegowidget	{	width: 90px;
+						height: 135px;
+	}
+
+	.imglogo-sidebar-vertical	{	display: none;
+								}
+
+	.sitenamevertical	{	display: none;
+						}
+}
+
+@media screen and (min-width: 600px){	/* Small devices (portrait tablets and large phones, 600px and up) */
+
+	.contenedor {
+
+		grid-template-areas:	"header header header"
+								"sidebar sidebar sidebar"
+								"contenido contenido contenido"
+								"widget-1 widget-1 widget-1"
+								"widget-2 widget-2 widget-2"
+								"footer footer footer";
+	}
+
+	.sitename	{	font-size: 65px;
+				}
+
+	.footertitle	{	font-size: 14px;
+					}
+
+	.footerdata	{	font-size: 14px;
+				}
+
+	.titular	{	font-size: 22px;
+				}
+
+	.categorianombres	{	font-size: 22px;
+						}
+
+	.infojuego	{	font-size: 16px;
+				}
+
+	.reqjuego	{	font-size: 15px;
+				}
+
+	.imglogo{	width: 67px;
+				height: 83px;
+			}
+
+	.imglogosidebar	{	width: 66px;
+						height: 82px;
+					}
+
+	.imgjuegoinicio	{	width: 130px;
+						height: 195px;
+					}
+
+	.imgjuegowidget	{	width: 108px;
+						height: 162px;
+	}
+
+	.imglogo-sidebar-vertical	{	display: none;
+								}
+
+	.sitenamevertical	{	display: none;
+						}
+}
+
+@media screen and (min-width: 768px){	/* Medium devices (landscape tablets, 768px and up) */
+
+	.contenedor {
+
+		grid-template-areas:	"header header header"
+								"sidebar contenido contenido"
+								"sidebar widget-1 widget-1"
+								"sidebar widget-2 widget-2"
+								"footer footer footer";
+	}
+
+	.sitename	{	font-size: 65px;
+				}
+
+	.footertitle	{	font-size: 14px;
+					}
+
+	.footerdata	{	font-size: 14px;
+				}
+
+	.titular	{	font-size: 22px;
+				}
+
+	.categorianombres	{	font-size: 22px;
+						}
+
+	.infojuego	{	font-size: 17px;
+				}
+
+	.reqjuego	{	font-size: 16px;
+				}
+
+	.imglogo{	width: 69px;
+				height: 86px;
+			}
+
+	.imglogosidebar	{	width: 67px;
+						height: 83px;
+					}
+
+	.imgjuegoinicio	{	width: 143px;
+						height: 215px;
+					}
+
+	.imgjuegowidget	{	width: 108px;
+						height: 162px;
+	}
+
+	.imglogo-sidebar-vertical	{	display: none;
+								}
+
+	.sitenamevertical	{	display: none;
+						}
+}
+
+@media screen and (min-width: 992px){	/* Large devices (laptops/desktops, 992px and up) */
+
+	.contenedor {
+
+		grid-template-areas:	"header header header"
+								"sidebar contenido contenido"
+								"sidebar widget-1 widget-1"
+								"sidebar widget-2 widget-2"
+								"footer footer footer";
+	}
+
+	.sitename	{	font-size: 80px;
+				}
+
+	.footertitle	{	font-size: 15px;
+					}
+
+	.footerdata	{	font-size: 15px;
+				}
+
+	.titular	{	font-size: 25px;
+				}
+
+	.categorianombres	{	font-size: 25px;
+						}
+
+	.infojuego	{	font-size: 18px;
+				}
+
+	.reqjuego	{	font-size: 17px;
+				}
+
+	.imglogo{	width: 70px;
+				height: 87px;
+			}
+
+	.imglogosidebar	{	width: 68px;
+						height: 85px;
+					}
+
+	.imgjuegoinicio	{	width: 187px;
+						height: 277px;
+					}
+
+	.imgjuegowidget	{	width: 108px;
+						height: 162px;
+	}
+
+	.imglogo-sidebar-vertical	{	display: none;
+								}
+
+	.sitenamevertical	{	display: none;
+						}
+}
+
+@media screen and (min-width: 1200px){	/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+	.contenedor {
+
+		grid-template-areas:	"header header header"
+								"sidebar contenido contenido"
+								"sidebar widget-1 widget-2"
+								"sidebar widget-1 widget-2"
+								"footer footer footer";
+	}
+
+	.sitename	{	font-size: 85px;
+				}
+
+	.footertitle	{	font-size: 17px;
+					}
+
+	.footerdata	{	font-size: 17px;
+				}
+
+	.titular	{	font-size: 28px;
+				}
+
+	.categorianombres	{	font-size: 28px;
+						}
+
+	.infojuego	{	font-size: 19px;
+				}
+
+	.reqjuego	{	font-size: 17px;
+				}
+
+	.imglogo{	width: 72px;
+				height: 89px;
+			}
+
+	.imglogosidebar	{	width: 70px;
+						height: 88px;
+					}
+
+	.imgjuegoinicio	{	width: 250px;
+						height: 393px;
+					}
+
+	.imgjuegowidget	{	width: 108px;
+						height: 162px;
+	}
+
+	.imglogo-sidebar-vertical	{	display: none;
+								}
+
+	.sitenamevertical	{	display: none;
+						}
+}
+
+@media screen and (min-width: 1600px){	/* Extra large devices x2 (large desktops, 1600px and up) */
+
+	.contenedor {
+
+		grid-template-areas:	"header header header"
+								"sidebar contenido contenido"
+								"sidebar widget-1 widget-2"
+								"footer footer footer";
+	}
+
+	.sitename	{	font-size: 90px;
+				}
+
+	.footertitle	{	font-size: 18px;
+					}
+
+	.footerdata	{	font-size: 18px;
+				}
+
+	.titular	{	font-size: 30px;
+				}
+
+	.categorianombres	{	font-size: 30px;
+						}
+
+	.infojuego	{	font-size: 20px;
+				}
+
+	.reqjuego	{	font-size: 17px;
+				}
+
+	.imglogo{	width: 80px;
+				height: 100px;
+			}
+
+	.imglogosidebar	{	width: 72px;
+						height: 90px;
+					}
+
+	.imgjuegoinicio	{	width: 300px;
+						height: 435px;
+					}
+
+	.imgjuegowidget	{	width: 114px;
+						height: 171px;
+	}
+
+	.imglogo-sidebar-vertical	{	display: none;
+								}
+
+	.sitenamevertical	{	display: none;
+						}
+}

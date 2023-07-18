@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/> 
+	<meta name="author" content="Proyecto Jovenes a Programar"/>
+	<title>Gamer's Shroud - Enviar Reserva</title>
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="stylesheet" href="css/estilofinal.css"/>
+</head>
+<!-- ESTA ES LA PAGINA DONDE SE ALOJA EL FORMULARIO DE RESERVAS. EN ESTE CASO EL USUARIO PARA HACERLO ALGO ORIGINAL OPTAREMOS POR UN SISTEMA EN EL CUAL EL USUARIO
+	SOLICITA A LA PAGINA LA RESERVA DE ALGUN JUEGO EN ESPECIAL Y ESTOS LE CONTESTAN VIA MAIL PARA CONCRETAR LA VENTA -->
+<body>
+<!-- SOBRE EL CENTRO DE LA PAGINA COLOCAREMOS EL NOMBRE DEL SITIO, QUE SE ENCONTRARA ENTRE LOS LOGOS / TAMBIEN AÑADIMOS UN MENSAJE SOBRE UN NUEVO LANZAMIENTO EN NUESTRA PAGINA -->
+	<div class="contenedor">
+		<header class="header">
+			<table class="logo">
+				<tr>
+					<th colspan="1" style="text-align:right;">
+						<a href="home.html">
+							<img class="imglogo" src="images/logogs.jpg"/>
+						</a>
+					</th>
+					<th colspan="3">
+						<a class="sitename" href="home.html">&nbsp;GAMER'S SHROUD&nbsp;</a>
+					</th>
+					<th colspan="1" style="text-align:left;">
+						<a href="home.html">
+							<img class="imglogo" src="images/logogs.jpg"/>
+						</a>
+					</th>
+				</tr>
+			</table>
+		</header>
+<!-- AQUI COLOCAREMOS EL FORMULARIO DE RESERVA CON SUS RESPECTIVOS BOTONES -->
+		<main class="contenido">
+			<table>
+				<tr>
+					<th colspan="5">
+						<span class="titular">ENVIAR RESERVA</span>
+					</th>
+				</tr>
+			</table>
+			<form action="okreserva.html" method="post">
+				<p class="infojuego">
+					DEJANOS TU RESERVA A TRAV&Eacute;S DE ESTE FORMULARIO.<br>TE CONTACTAREMOS PARA CONCRETAR EL ENV&Iacute;O.<br><br>GRACIAS POR SU PREFERENCIA.
+				</p>
+				<table>
+					<tr>
+						<th>
+							<span class="nombrecampo" style="color: #28E296;">*campo requerido</span>
+						</th>
+					</tr>
+					<tr>
+						<td colspan="1">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span class="nombrecampo">Nombre:</span><span class="camporequerido">*</span>
+						</td>
+						<td colspan="2">
+							<input type="text" id="nombre_usuario" name="nombre_usuario" maxlength="30" required>
+						</td>
+					</tr>
+					<br>
+					<tr>
+						<td colspan="1">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span class="nombrecampo">E-mail:</span><span class="camporequerido">*</span>
+						</td>
+						<td colspan="2">
+							<input type="mail" id="mail_usuario" name="mail_usuario" maxlength="30" required>
+						</td>
+					</tr>
+					<br>
+					<tr>
+						<td colspan="1">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span class="nombrecampo">Comentario:</span><span class="camporequerido">*</span>
+						</td>
+						<td colspan="2">
+							<textarea id="comentario_usuario" name="comentario_usuario" required></textarea>
+						</td>
+					</tr>
+					<br>
+					<tr>
+						<td colspan="1">
+							&nbsp;&nbsp;&nbsp;&nbsp;<span class="nombrecampo">Selecciona un juego <span style="color: #28E296;">(opcional)</span>:</span>
+						</td>
+						<td colspan="2">
+							<select id="juego" name="juego">
+								<option style="display: none;">Seleccione juego</option>
+								<optgroup label="Accion">
+								<option>PayDay 3</option>
+								<option>Elden Ring</option>
+								<option>Street Fighter 6</option>
+								<optgroup label="Carreras">
+								<option>Riders Republic</option>
+								<option>F1 23</option>
+								<option>LEGO 2K Drive</option>
+								<optgroup label="Rol & MMO">
+								<option>Hogwarts Legacy</option>
+								<option>Darkest Dungeon 2</option>
+								<option>Dave The Diver</option>
+								<optgroup label="Survival Horror">
+								<option>Sons of The Forest</option>
+								<option>Aliens: Dark Descent</option>
+								<option>Resident Evil 4</option>
+								<optgroup label="Deportes & Simulacion">
+								<option>FIFA 23</option>
+								<option>NBA 2K23</option>
+								<option>WWE 2K23</option>
+						</td>
+					</tr>
+				</table>
+				<br><br>
+				<button type="reset" class="clean"><b>LIMPIAR PLANILLA</b></button>
+				<button type="submit" class="ok"><b>ENVIAR</b></button>
+			</form>
+		</main>
+<!-- ESTE BANNER LATERAL IZQUIERDO SERA NUESTRO SISTEMA DE NAVEGACION EN EL CUAL PODREMOS ACCEDER AL CATALOGO SEGUN CATEGORIA DEL JUEGO -->
+		<aside class="sidebar">
+			<table>
+				<tr>
+					<th>
+						<a href="home.html">
+							<img class="imglogo-sidebar-vertical" src="images/logogs.jpg"/>
+						</a>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<a class="sitenamevertical" href="home.html">G<br>A<br>M<br>E<br>R<br>'<br>S<br><br>S<br>H<br>R<br>O<br>U<br>D</a>
+					</th>
+				</tr>
+			</table>
+		</aside>
+<!-- EL WIDGET-1 QUEDARA VACIO -->
+		<div class="widget-1">
+			<table class="logo">
+				<tr>
+					<th class="reqjuego" colspan="1" valign="top">
+						<span style="color:#28E296;">M&eacute;todos de pago:</span><br>
+						- Tarjetas de cr&eacute;dito<br>
+						- Transferencia bancaria<br>
+						- Dep&oacute;sito en locales de cobranza<br>
+						- Efectivo al momento de la entrega<br>
+					</th>
+				</tr>
+			</table>
+		</div>
+<!-- EL WIDGET-2 QUEDARA VACIO -->
+		<div class="widget-2">
+			<table class="logo">
+				<tr>
+					<th class="reqjuego" colspan="1" valign="top">
+						<span style="color:#28E296;">Instal&aacute; la aplicaci&oacute;n de Gamer's Shroud</span><br>
+						&#161;Disfruta de las mejores ofertas en videojuegos donde quiera que est&eacute;s!<br>
+					</th>
+				</tr>
+				<tr>
+					<th class="reqjuego" colspan="1" valign="top">
+						<img class="imglogostores" src="images/logogoogleplay.jpg"/>
+						<img class="imglogostores" src="images/logoappstore.jpg"/>
+					</th>
+				</tr>
+			</table>
+		</div>
+<!-- EN EL FOOTER VAMOS A COLOCAR INFORMACION DE CONTACTO CON EL DESARROLLADOR DEL SITIO -->
+		<footer class="footer">
+			<table class="logo">
+				<tr>
+					<th colspan="1">
+						<span class="footertitle">Desarrollo: </span>
+						<span class="footerdata">FSTM27</span>
+					</th>
+				</tr>
+				<tr>
+					<th colspan="1">
+						<span class="footertitle">Contacto: </span>
+						<span class="footerdata">
+							<a href="mailto:f27m@design.com" class="footerdata">fstm27@gmail.com</a>
+						</span>
+					</th>
+				</tr>
+			</table>
+		</footer>
+	</div>
+</body>
+</html>
