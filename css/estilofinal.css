@@ -136,6 +136,16 @@ body{	background: black;
 						padding: 4px;
 					}
 
+.btngenero	{	font-family: "Carbona", "Times New Roman";
+				font-weight: bold;
+				color: white;
+				text-decoration: none;
+				font-size: 30px;
+				background-color: transparent;
+				border: none;
+				padding: 4px;
+			}
+
 /* ESTILOS PARA LAS IMAGENES */
 
 .imglogo	{	width: 80px;
@@ -230,14 +240,10 @@ body{	background: black;
 
 /* EFECTOS */
 
-a.categorianombres:hover{	color: white;
-							background-color: #28E296;
-							cursor: pointer;
-						}
-
-th.categorianombres:hover	{	color: white;
-								background-color: #28E296;
-							}
+.btngenero:hover{	color: black;
+					background-color: #28E296;
+					cursor: pointer;
+				}
 
 /* MEDIA SCREEN SETS */
 
